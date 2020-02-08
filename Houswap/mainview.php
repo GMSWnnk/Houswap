@@ -13,7 +13,7 @@
 		
 
 	<div>
-	<h1> &nbsp&nbsp Houswap &nbsp&nbsp
+	<h1> Houswap 
 		<input type="text" placeholder="search">
 		<button>검색</button>
 	</h1>
@@ -24,16 +24,20 @@
 		<table>
 		<tr>
 			<td>
-			<?php echo"<img src='D:/eclipsphp/houswap/Houswap/images/1111.jpg'
-			width =100 height=100>";?></td>
-			<td><img src="D:/eclipsphp/houswap/Houswap/images/1111.jpg" 
-			width =100 height=100></td>
-			<td><img src="D:/eclipsphp/houswap/Houswap/images/1111.jpg" 
-			width =100 height=100></td>
-			<td><img src="D:/eclipsphp/houswap/Houswap/images/1111.jpg"
-			width =100 height=100></td>
-			<td><img src="D:/eclipsphp/houswap/Houswap/images/1111.jpg" 
-			width =100 height=100></td>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			</td>
+			<td>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			</td>
+			<td>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			</td>
+			<td>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			</td>
+			<td>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			</td>
 		</tr>
 		
 		<tr align=center>

@@ -8,7 +8,7 @@
 <body>
 <h1><a class="title" href='./mainview.php'>Houswap</a></h1>
 
-<form action="./signupdate.php" method="post">
+<form action="./signupdate.php" method="post" name="signup update">
 	<table class="signuptable">
 		<tr>
 			<td>아이디
@@ -54,7 +54,16 @@
 			<td>주소
 				<input type="text" style=width:100%;height:100%; name="cs_adress">
 			</td>
-		</tr>	
+		</tr>
+
+		
+		<!-- submit button -->
+		<tr>
+			<td>
+				<input type="submit">
+			</td>
+		</tr>
+		
 	</table>
 </form>
 
