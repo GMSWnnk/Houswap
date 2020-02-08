@@ -1,0 +1,11 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"Houswap\\Houswap\\" : "src"
+		}
+	},
+	"name" : "houswap/Houswap",
+	"require" : {
+		"php" : ">=7.2"
+	}
+}
