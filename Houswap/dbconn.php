@@ -1,4 +1,5 @@
 <?php 
+/*database connect*/
 $mysql_host="localhost";
 $mysql_user="root";
 $mysql_password="1234";
@@ -11,5 +12,4 @@ if(!$conn){
 }
 
 session_start();
-
 ?>
