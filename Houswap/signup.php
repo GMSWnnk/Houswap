@@ -8,6 +8,7 @@
 <body>
 <h1><a class="title" href='./mainview.php'>Houswap</a></h1>
 
+
 <form action="./signupdate.php" method="post" name="signup update">
 	<table class="signuptable">
 		<tr>
