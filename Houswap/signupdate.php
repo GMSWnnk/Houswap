@@ -36,5 +36,5 @@ else if(!$c_adress){ echo "주소를 입력해주세요.";}
 $insert_q="INSERT INTO customer 
            SET c_id='$c_id',
                c_password='$c_password'";
-               c_
+          
 ?>
