@@ -37,5 +37,4 @@ $insert_q="INSERT INTO customer
            SET c_id='$c_id',
                c_password='$c_password'";
                c_
-
 ?>
