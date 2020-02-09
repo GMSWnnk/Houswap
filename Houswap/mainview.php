@@ -24,19 +24,19 @@
 		<table>
 		<tr>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>;>"?>
+			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
 			</td>
 		</tr>
 		
@@ -48,12 +48,7 @@
 			<td>5</td>
 		</tr>
 		</table>
-		
 
-<?
-
-
-?>
 
 </body>
 </html>
