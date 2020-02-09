@@ -32,6 +32,7 @@ else if(!$c_email){ echo "이메일을 입력해주세요.";}
 else if(!$c_phonenum){ echo "휴대폰번호를 입력해주세요.";}
 else if(!$c_adress){ echo "주소를 입력해주세요.";}
 
+
 #insert query
 $insert_q="INSERT INTO customer 
            SET c_id='$c_id',
