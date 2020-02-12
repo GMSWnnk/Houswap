@@ -18,5 +18,5 @@ $check_q="SELECT * FROM customer
 WHERE c_id='$login_id'&& c_password='$login_password'";
 $check_result = mysqli_query($conn, $check_q);
 
-
+//ddd
 ?>
