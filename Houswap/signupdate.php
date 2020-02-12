@@ -6,8 +6,8 @@
 $check_sql = "SELECT * FROM customer WHERE c_id='$c_id'";
 
 #Exist ID check from DB
-$check_num =mysqli_query($conn, $check_sql);
-if(mysqli_num_rows($check_num)>0)
+$check_id =mysqli_query($conn, $check_sql);
+if(mysqli_num_rows($check_id)>0)
 {
     echo "존재하는 아이디입니다.";
     exit;
@@ -35,6 +35,7 @@ $insert_q="INSERT INTO customer
 
 $insert_d=mysqli_query($conn,$insert_q);
 
+//sucess message
 echo"<script>alert('회원가입이 완료되었습니다.')</script>;";
 echo"<script>location.replace('login.php')</script>";
 

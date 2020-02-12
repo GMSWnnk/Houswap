@@ -9,7 +9,7 @@
 <h1><a class="title" href='./mainview.php'>Houswap</a></h1>
 
 
-<form action="./signupdate.php" method="post" name="signup update">
+<form action="./signupdate.php" method="post" name="signupupdate">
 	<table class="signuptable">
 		<tr>
 			<td>아이디
@@ -56,15 +56,12 @@
 				<input type="text" style=width:100%;height:100%; name="cs_adress">
 			</td>
 		</tr>
-
-		
 		<!-- submit button -->
 		<tr>
 			<td>
 				<input type="submit">
 			</td>
 		</tr>
-		
 	</table>
 </form>
 

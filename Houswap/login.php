@@ -1,4 +1,5 @@
 <?php include './dbconn.php';?>
+
 <html>
 <head>
 <title>login</title>
@@ -6,9 +7,10 @@
 </head>
 
 <body>
+	
 <h1><a class="title" href='./mainview.php'>Houswap</a></h1>
 
-<form action="./logincheck.php" method="post">
+<form action="./logincheck.php" method="post" name="logincheck">
 	<table class="logintable">
 		<tr>
 			<td>
@@ -24,20 +26,24 @@
 		
 		<tr>
 			<td>
-				<input type="submit" style=width:100%;height:100%; value="로그인" >
+				<input type="submit" style=width:100%;height:100%; value="로그인">
 			</td>
-		</tr>
+		</tr>	
 		
+			
 	</table>
-</form>
-
-<hr style="width:300px;"></hr>
+	
+<hr style="width:300px;"></hr>	
 
 <div>
 <div class="sginbutton">
 	<h5><a id="signupbutton" href='./signup.php'>회원가입</a></h5>
 </div>
 </div>
+
+
+</form>
+
 
 </body>
 </html>
