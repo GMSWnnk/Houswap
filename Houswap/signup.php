@@ -9,7 +9,7 @@
 <h1><a class="title" href='./mainview.php'>Houswap</a></h1>
 
 
-<form action="./signupdate.php" method="post" name="signupupdate">
+<form action="./signupdate.php" method="post" name="signupupdate" onsubmit='return EmptyCheck();'>
 	<table class="signuptable">
 		<tr>
 			<td>아이디
@@ -64,6 +64,43 @@
 		</tr>
 	</table>
 </form>
+
+<?php #error------------------------------------ ?>
+<script>
+function EmptyCheck(){
+	if(document.signupupdate.cs_id.value<5||document.signupupdate.cs_id.value==null){
+	    alert('아이디를 입력하세요.');
+	    return false;
+	}
+	else if(document.signupupdate.cs_password.value<5||document.signupupdate.cs_password.vlaue==null){
+	    alert('비밀번호를 입력하세요.'); 
+	    return false;
+	}
+	else if(document.signupupdate.cs_name.value==''||document.signupupdate.cs_name.value==null){
+	    alert('이름을 입력하세요.');
+	    return false;
+	}
+	else if(document.signupupdate.cs_sex.value==''||document.signupupdate.cs_sex.value==null){
+		alert('성별을 입력하세요.');
+		return false;
+	}
+	else if(document.signupupdate.cs_email.value==''||document.signupupdate.cs_email.value==null){
+	    alert('이메일을 입력하세요.');
+	    return false;
+	}
+	else if(document.signupupdate.cs_phonenum.value==''||document.signupupdate.cs_phonenum.value==null){
+	    alert('핸드폰 번호를 입력하세요.');
+	    return false;
+	}
+	else if(document.signupupdate.cs_adress.value==''||document.signupupdate.cs_adress.value==null){
+	    alert('주소를 입력하세요.');
+	    return false;
+	}
+else{
+	return true;
+	}	
+}
+</script>
 
 </body>
 </html>
