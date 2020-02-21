@@ -9,8 +9,15 @@
 	</head>
 
 <body>
+		<?php //no session --> login button
+		if(!isset($_SESSION['ss_id'])){ ?>
 		<h3><a href="./login.php">Login</a></h3>
 		
+		<?php //session --> logout button
+		}
+		else{?>
+		<h3><a href="./logout.php">Logout</a></h3>    
+		<?php }?>
 
 	<div>
 	<h1> Houswap 
@@ -19,8 +26,9 @@
 	</h1>
 	</div>
 		<h4>최근 올라온 상품</h4>
+	
 	<hr>
-	<br>
+	
 		<table>
 		<tr>
 			<td>

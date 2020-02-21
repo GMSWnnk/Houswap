@@ -14,13 +14,13 @@
 	<table class="logintable">
 		<tr>
 			<td>
-				<input type="text" style=width:100%;height:100%; placeholder="아이디" name="cs_id">
+				<input type="text" style=width:100%;height:100%; placeholder="아이디" name="c_id">
 			</td>
 		</tr>
 		
 		<tr>
 			<td>
-				<input type="password"  style=width:100%;height:100%; placeholder="비밀번호" name="cs_password">
+				<input type="password"  style=width:100%;height:100%; placeholder="비밀번호" name="c_password">
 			</td>
 		</tr>
 		

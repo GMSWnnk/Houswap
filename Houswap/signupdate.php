@@ -3,23 +3,23 @@
 #----------sign up source--------------
 
 #get form data from signup.php 
-$cs_id= trim($_POST['cs_id']);
-$cs_password= trim($_POST['cs_password']);
-$cs_name= trim($_POST['cs_name']);
-$cs_sex= trim($_POST['cs_sex']);
-$cs_email= trim($_POST['cs_email']);
-$cs_phonenum= trim($_POST['cs_phonenum']);
-$cs_adress= trim($_POST['cs_adress']);
+$c_id= trim($_POST['c_id']);
+$c_password= trim($_POST['c_password']);
+$c_name= trim($_POST['c_name']);
+$c_sex= trim($_POST['c_sex']);
+$c_email= trim($_POST['c_email']);
+$c_phonenum= trim($_POST['c_phonenum']);
+$c_adress= trim($_POST['c_adress']);
 
 #insert query
 $insert_q="INSERT INTO customer 
-           SET c_id='$cs_id',
-               c_password='$cs_password',   
-               c_name='$cs_name',
-               c_sex ='$cs_sex',
-               c_email ='$cs_mail',
-               c_phonenum='$cs_phonenum',
-               c_adress='$cs_adress'";
+           SET c_id='$c_id',
+               c_password='$c_password',   
+               c_name='$c_name',
+               c_sex ='$c_sex',
+               c_email ='$c_mail',
+               c_phonenum='$c_phonenum',
+               c_adress='$c_adress'";
 
 $insert_d=mysqli_query($conn,$insert_q);
 
@@ -29,7 +29,7 @@ echo"<script>location.replace('login.php')</script>";
 
 
 #check for user Exist
-$check_sql = "SELECT * FROM customer WHERE c_id='$cs_id'";
+$check_sql = "SELECT * FROM customer WHERE c_id='$c_id'";
 
 #Exist ID check from DB
 $check_id =mysqli_query($conn, $check_sql);
