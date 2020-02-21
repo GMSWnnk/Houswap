@@ -2,11 +2,7 @@
 
 body{
 	background:#ededed;
-	text-align:center;
 	margin : 100px auto 100px;
-	font-size:30px;
-	
-	/*border: 1px solid #3b90f7;*/
 }
 
 table.logintable{
@@ -18,7 +14,7 @@ table.logintable{
 }
 
 input{
-	padding:10px;
+	padding:15px;
 	font-family:"고딕체", Georgia, Time New Roman, sans-serif; 
 }
 
@@ -31,9 +27,13 @@ input[type=submit]{
 }
 
 a.title{
-	/*text-align:center;*/
 	text-decoration:none; /*버튼  줄 없앰*/
 	color:#3b90f7;
+	font-size:60px;
+}
+
+h1{
+	text-align:center;
 }
 
 hr{
@@ -46,8 +46,9 @@ hr{
 div{
 	margin:auto;
 	width:300px;
-	height:170px;	
+	height:100px;	
 }
+
 
 div.sginbutton{
 	display:table-cell;
@@ -62,17 +63,22 @@ a#signupbutton{
 }
 
 /*----------------signup.php----------------*/
-table.signuptable{
+/*table.signuptable{
 	margin:auto;
 	width:300px;
 	height:100px;
 	
 	border-collapse:separate;
-	border-spacing: 0 30;
-} /*테이블 수에 따라 높이를 키워야 한다.*/
+	border-spacing: 0 45;
+} /*테이블 수에 따라 높이를 키워야 한다.*/*/
 
-select{	
-	padding:10px;
+div.signupform{
+	font-size:20px;
+	text-align:left;
+}
+
+select{	/*gender*/
+	padding:15px;
 }
 
 

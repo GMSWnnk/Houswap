@@ -13,3 +13,5 @@ if(!$conn){
 
 session_start();
 ?>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>

@@ -6,20 +6,22 @@
 $c_id= trim($_POST['c_id']);
 $c_password= trim($_POST['c_password']);
 $c_name= trim($_POST['c_name']);
-$c_sex= trim($_POST['c_sex']);
+$c_gender= trim($_POST['c_gender']);
 $c_email= trim($_POST['c_email']);
 $c_phonenum= trim($_POST['c_phonenum']);
 $c_adress= trim($_POST['c_adress']);
+$c_birth= trim($_POST['c_birth']);
 
 #insert query
 $insert_q="INSERT INTO customer 
            SET c_id='$c_id',
                c_password='$c_password',   
                c_name='$c_name',
-               c_sex ='$c_sex',
+               c_gender ='$c_gender',
                c_email ='$c_mail',
                c_phonenum='$c_phonenum',
-               c_adress='$c_adress'";
+               c_adress='$c_adress',
+               c_birth='$c_birth'";
 
 $insert_d=mysqli_query($conn,$insert_q);
 
