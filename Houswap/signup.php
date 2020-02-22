@@ -11,7 +11,7 @@ include("./dbconn.php");
 <h1><a class="title" href='./mainview.php'>Houswap</a></h1>
 
 
-<form action="./signupdate.php" method="post" name="signupupdate" onsubmit='return EmptyCheck();'>
+<form action="./signupdate.php" method="post" name="signup" onsubmit='return EmptyCheck_signup();'>
     <!-- id -->
     <div class="signupform">
     	아이디
@@ -28,7 +28,7 @@ include("./dbconn.php");
     	이름
     	<input type="text" style=width:100%; id="name" placeholder="Name" name="c_name">
     	<div class="check" id="name_check"></div>
-    </div>
+     </div>
 	<!-- gender -->
 	<div class="signupform">
     	성별
@@ -51,63 +51,53 @@ include("./dbconn.php");
     	<div class="check" id="email_check"></div>
     </div>
 	<!-- phone number -->
-		<div class="signupform">
+	<div class="signupform">
     	휴대전화
     	<input type="text" style=width:100%; id="phonenum" placeholder="Phone Number" name="c_phonenum">
     	<div class="check" id="phonenum_check"></div>
     </div>
 	<!-- adress -->
-		<div class="signupform">
+	<div class="signupform">
     	주소
     	<input type="text" style=width:100%; id="adress" placeholder="Adress" name="c_adress">
     	<div class="check" id="adress_check"></div>
     </div>
+	
 	<!-- submit button -->
-	<div>
-	<input type="submit">
+
+	<div class="signupform">
+	<input class="signsubmit" type="submit" value="회원가입">
 	</div>
+
 </form>
 
-<?php  
-/*$overlap_q= "SELECT * FROM customer WHERE c_id='$c_id'";
-$result=mysqli_query($conn, $overlap_q);
-$count=mysqli_num_row($result);
-
-if($count==0){
-    echo"사용 가능한 아이디입니다.";
-}
-else{
-    echo"존재하는 아이디입니다.";
-}*/
-?>
-
 <script>
-function EmptyCheck(){
-	   if(document.signupupdate.c_id.value<5){
+function EmptyCheck_signup(){
+	   if(document.signup.c_id.value<5){
 	       alert('아이디를 5자 이상 입력하세요.');
 	       return false;
 	   }
-	   if(document.signupupdate.c_password.value.length<5){
+	   if(document.signup.c_password.value.length<5){
 	       alert('비밀번호를 5자 이상 입력하세요.'); 
 	       return false;
 	   }
-	   if(document.signupupdate.c_name.value==""||document.signupupdate.c_name.value==null){
+	   if(document.signup.c_name.value==""||document.signup.c_name.value==null){
 	       alert('이름을 입력하세요.');
 	       return false;
 	   }
-	   if(document.signupupdate.c_sex.value==""||document.signupupdate.c_sex.value==null){
+	   if(document.signup.c_gender.value==""||document.signup.c_gender.value==null){
 	      alert('성별을 입력하세요.');
 	      return false;
 	   }
-	   if(document.signupupdate.c_email.value==""||document.signupupdate.c_email.value==null){
+	   if(document.signup.c_email.value==""||document.signup.c_email.value==null){
 	       alert('이메일을 입력하세요.');
 	       return false;
 	   }
-	   if(document.signupupdate.c_phonenum.value==""||document.signupupdate.c_phonenum.value==null){
+	   if(document.signup.c_phonenum.value==""||document.signup.c_phonenum.value==null){
 	       alert('핸드폰 번호를 입력하세요.');
 	       return false;
 	   }
-	   if(document.signupupdate.c_adress.value==""||document.signupupdate.c_adress.value==null){
+	   if(document.signup.c_adress.value==""||document.signup.c_adress.value==null){
 	       alert('주소를 입력하세요.');
 	       return false;
 	   }

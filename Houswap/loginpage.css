@@ -19,11 +19,16 @@ input{
 }
 
 input[type=submit]{
-	background:#3b90f7;
+	background:#0070c0;
 	border:0;
 	color:#ffffff;
 	font-weight:bold;
 	cursor:pointer;
+}
+
+input.signsubmit[type=submit]{
+	width:100%;
+	margin-top:10px;
 }
 
 a.title{
@@ -34,6 +39,7 @@ a.title{
 
 h1{
 	text-align:center;
+	margin: 1em;
 }
 
 hr{
@@ -49,11 +55,12 @@ div{
 	height:100px;	
 }
 
-
 div.sginbutton{
-	display:table-cell;
+	margin:auto;
+	width:300px;
+	height:100px;
+
 	text-align:right; 
-	vertical-align:top;
 }
 
 a#signupbutton{
@@ -75,6 +82,7 @@ a#signupbutton{
 div.signupform{
 	font-size:20px;
 	text-align:left;
+
 }
 
 select{	/*gender*/

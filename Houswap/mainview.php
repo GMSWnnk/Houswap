@@ -8,25 +8,34 @@
 		<link href="./mainpage.css" rel="stylesheet" type="text/css">
 	</head>
 
-<body>
-		<?php //no session --> login button
-		if(!isset($_SESSION['ss_id'])){ ?>
-		<h3><a href="./login.php">Login</a></h3>
-		
-		<?php //session --> logout button
+<body> 
+		<?php if(!isset($_SESSION['ss_id'])){ ?>
+		<h5><a href="./login.php">로그인</a>
+		<a class=mypage href="./login.php">마이페이지</a></h5>		
+		<?php 
 		}
+		
 		else{?>
-		<h3><a href="./logout.php">Logout</a></h3>    
+		<h5><a href="./logout.php">로그아웃</a>
+		<a class=mypage href="./mypage.php">마이페이지</a></h5>	  
 		<?php }?>
-
-	<div>
-	<h1> Houswap 
+		
+	<!-- mainpage name, search -->
+	<h1><a class="title" href='./mainview.php'>Houswap</a> 
 		<input type="text" placeholder="search">
 		<button>검색</button>
 	</h1>
+
+	<div id="menu">
+		<div id="menufont">
+		<a class=menu>메뉴1</a> 
+		<a class=menu>메뉴2</a>
+		<a class=menu>메뉴3</a>
+		<a class=menu>메뉴4</a>
+		</div>
 	</div>
-		<h4>최근 올라온 상품</h4>
-	
+
+	<h4>최근 올라온 상품</h4>
 	<hr>
 	
 		<table>

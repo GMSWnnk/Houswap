@@ -25,11 +25,6 @@ $insert_q="INSERT INTO customer
 
 $insert_d=mysqli_query($conn,$insert_q);
 
-//sucess message
-echo"<script>alert('회원가입이 완료되었습니다.')</script>;";
-echo"<script>location.replace('login.php')</script>";
-
-
 #check for user Exist
 $check_sql = "SELECT * FROM customer WHERE c_id='$c_id'";
 
@@ -37,8 +32,13 @@ $check_sql = "SELECT * FROM customer WHERE c_id='$c_id'";
 $check_id =mysqli_query($conn, $check_sql);
 if(mysqli_num_rows($check_id)>0)
 {
-    echo"<script>alert('존재하는 아이디입니다.')</script>;";
+    echo"<script>alert('존재하는 아이디입니다.')</script>";
+    echo"<script>location.replace('signup.php')</script>";
 }
+
+//sucess message
+echo"<script>alert('회원가입이 완료되었습니다.')</script>";
+echo"<script>location.replace('login.php')</script>";
 
 mysqli_close($conn);
 ?>

@@ -17,7 +17,7 @@ if($count==0){
 else{
    echo"<script>alert('로그인이 완료되었습니다.');</script>";
    echo"<script>location.href='./mainview.php';</script>";
-   
+ 
    $_SESSION['ss_id'] = $login_id;
 }
 mysqli_close($conn);
