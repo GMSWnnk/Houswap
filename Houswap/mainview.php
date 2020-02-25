@@ -9,7 +9,9 @@
 	</head>
 
 <body> 
-		
+
+
+<div id=topview> <!--login+mainfont+searchtab-->		
 		<?php if(!isset($_SESSION['ss_id'])){ ?>
 		<a href="./login.php">로그인</a>
 		<a class=mypage href="./login.php">마이페이지</a>
@@ -29,10 +31,9 @@
 		<button>검색</button>
 	</div>	
 
-
 	<div id="menu">
-		<div id=menuclass>
-		<table id=menutable>
+		<div id="menuclass">
+		<table id="menutable">
 			<tr><td><a class=menu>메뉴1</a></td>
 			<td><a class=menu>메뉴2</a></td>
 			<td><a class=menu>메뉴3</a></td>
@@ -41,63 +42,71 @@
 		</table>
 		</div>
 	</div>
-
-<div class="newtable_font">
-	<h4>최근 올라온 상품</h4>
-	<hr align="left">
 </div>
-		
-<div class="newtable">
-		<table>
+
+<div class=row>	
+	<div class="newtable">
+		<h4>최근 올라온 상품</h4>
+		<hr align="left">
+		<table class="photo">
 		<tr>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/joongbu.png'width=150px height=150px>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/joongbu.png'width=150px height=150px>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
-			</td>
-			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
-			</td>
-			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/joongbu.png'width=150px height=150px>"?>
 			</td>
 		</tr>
 		<tr align=center>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
+			<td>게시글1</td>
+			<td>게시글2</td>
+			<td>게시글3</td>
+		</tr>
+		
+		<tr>
+			<td>
+			<?php echo "<img src='images/joongbu.png'width=150px height=150px>"?>
+			</td>
+			<td>
+			<?php echo "<img src='images/joongbu.png'1111.jpg'width=150px height=150px>"?>
+			</td>
+			<td>
+			<?php echo "<img src='images/joongbu.png'width=150px height=150px>"?>
+			</td>
+		</tr>
+		<tr align=center>
+			<td>게시글4</td>
+			<td>게시글5</td>
+			<td>게시글6</td>
+		
+
 		</tr>
 		</table>
-</div>
-		
-<div class="newtable_font">
-	<h4>마감 임박 상품</h4>
-	<hr align="left">
+	</div>
 </div>
 
 <div class="newtable">
-		<table>
+	<h4>마감 임박 상품</h4>
+	<hr align="left">	
+		<table class="photo">
 		<tr>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/1111.jpg'width=100px height=100px>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/1111.jpg'width=100px height=100px>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/1111.jpg'width=100px height=100px>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/1111.jpg'width=100px height=100px>"?>
 			</td>
 			<td>
-			<?php echo "<img src='images/1111.jpg'width=100 height=100>"?>
+			<?php echo "<img src='images/1111.jpg'width=100px height=100px>"?>
 			</td>
 		</tr>
 		<tr align=center>
