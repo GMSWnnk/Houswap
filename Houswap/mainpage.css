@@ -3,7 +3,7 @@
 body{
 	font-family: "∞ÌµÒ√º", Georgia, Time New Roman, sans-serif; 
 	margin:0px;
-	background-color:#ebf0f5;
+	
 }
 
 a{
@@ -14,44 +14,55 @@ a.mypage{
 	padding:0px 7px;
 }
 a.title{
-	color:#3b90f7;
+	color:#9cce6f;
 	font-weigt:20px;
-	font-size:40px; 
+	font-size:50px; 
 }
 a.menu{
 	color:#ffffff;
 }
 
+
 input{
-	border:1px solid #0070c0;
-	width:250px;
-	height:31px;
+	border:1px solid #b5db93;
+	width:350px;
+	height:35px;
 	padding:10px;
-	margin:0 0 0 20px;
 }
+
 
 button{
 	width:50px;
-	height:30px;
-	background:#0070c0;
+	height:35px;
+	background:#9cce6f;
 	color:#ffffff;
 	border:0;
 }
 
 
 table.photo{
-	padding: 15px 0;
-	border-collapse: seperate;	
+	border-collapse: seperate;
+	border-spacing: 25px 20;
 }
 
 table#menutable{
 	border-collapse: seperate;
 }
 
-td{
-	padding:0 23.5px;
+
+
+td.image{
+	font-size:14px;
 	border:1px solid;
+	width:200px;
+	height:200px;
 }
+td.place{
+	color:#b4bbbf;
+	font-size:13px;
+}
+
+
 
 div#topview{
 	background-color:#ffffff;
@@ -60,42 +71,40 @@ div#topview{
 div.maintitle{
 	margin: 40px 40px 70px;
 }
-div#menu{
-		background:#0070c0;
-		width:100%;
-		height:50px;
-		line-height:50px;
-		
-}
-div#menuclass{
-	padding: 0 10px;
-}
-
 
 div.newtable{
-	margin: 10px 200px;
-	border: 1px solid #ccd2d9;
-	border-radius:1em;
-	width:600px;
-	height:500px;
-	background-color:#ffffff;
+	display:inline-block;
+	border: 1px solid;
+	width:200px;
+	height:200px;
+	margin: 0 10px;
 }
 
-div.box{
-	border:1px solid; 
-	width:50%;
-	height:50%;
-	color:red;
-	float:right;
+div.textline{
+	
+	display:inline-block;
+	font-size:20px;
+	margin-block-start: 4em;
+	
 }
 
+b#new{
+	margin: 0 680px 0 0;
+}
+
+b#deadline{
+	margin: 0 700px 0 0;
+}
+h3.mypagetext{
+	margin: 0 325px;
+}
 h4{
-	padding:10px;
+	margin: 0 40px 0 0;
 }
-
 hr{
 	border:none;
-	border-top:1px solid ;
-	margin-block-end:1em;;
-	width:600px;
+	border-top:1px solid;
+	margin-block-end:20px;
+	width:890px;
+	
 }
