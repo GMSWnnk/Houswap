@@ -3,7 +3,6 @@
 body{
 	font-family: "∞ÌµÒ√º", Georgia, Time New Roman, sans-serif; 
 	margin:0px;
-	
 }
 
 a{
@@ -39,18 +38,18 @@ button{
 	border:0;
 }
 
-
 table.photo{
 	border-collapse: seperate;
 	border-spacing: 25px 20;
 }
-
 table#menutable{
 	border-collapse: seperate;
 }
-
-
-
+table.mypage{
+	border-collapse: collapse;
+	width:890px;
+	table-layout:fixed;
+}
 td.image{
 	font-size:14px;
 	border:1px solid;
@@ -61,8 +60,17 @@ td.place{
 	color:#b4bbbf;
 	font-size:13px;
 }
-
-
+td.mypage{	
+	
+}
+th.mypage{
+	width: 150px;
+	background-color:#e6e6e6;
+}
+th.mypage,td.mypage{
+	border:1px solid #c4c4c4;
+	padding: 10px;
+}
 
 div#topview{
 	background-color:#ffffff;
@@ -81,11 +89,8 @@ div.newtable{
 }
 
 div.textline{
-	
-	display:inline-block;
 	font-size:20px;
 	margin-block-start: 4em;
-	
 }
 
 b#new{
@@ -97,6 +102,9 @@ b#deadline{
 }
 h3.mypagetext{
 	margin: 0 325px;
+}
+h3.myinfo{
+	margin: 10px 150px;
 }
 h4{
 	margin: 0 40px 0 0;
